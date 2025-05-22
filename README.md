@@ -178,29 +178,3 @@ For deployment, I created a web application using Flask that allows users to upl
 
 4. The deployment process included thorough testing to ensure the application works correctly across different devices and browsers.
 
-## Conclusion
-
-In conclusion, this project demonstrates the application of machine learning to a real-world medical problem. By developing an accurate classification model for brain cancer types, we've created a tool that could potentially assist medical professionals in diagnosis.
-
-The project fulfilled all requirements including:
-- Functional code with good practices
-- Clear problem statement and analysis
-- Thorough data cleaning and documentation
-- Comprehensive exploratory analysis with varied visualizations
-- Effective feature engineering and selection
-- Algorithm comparison and parameter tuning
-- Robust validation and evaluation
-- Successful deployment as a web application
-
-Thank you for watching this presentation. The complete code, dataset, saved models, and deployment files are available in the GitHub repository linked in the description.
-
-## Future Work
-
-If I were to extend this project further, I would:
-1. Incorporate additional medical metadata to improve classification accuracy
-2. Implement explainable AI techniques to help doctors understand model decisions
-3. Expand the model to detect more types of brain abnormalities
-4. Collect feedback from medical professionals to refine the model
-5. Develop a more comprehensive diagnostic tool that provides treatment recommendations based on the classification results
-
-These enhancements would make the system more valuable in clinical settings and potentially improve patient outcomes through earlier and more accurate diagnosis.
