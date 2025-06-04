@@ -1,4 +1,4 @@
-# Brain Cancer Classification Project Video Script
+# Brain Cancer Classification Project
 
 ## Introduction
 
