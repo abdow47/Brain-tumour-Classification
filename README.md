@@ -63,8 +63,6 @@ Throughout the project, I created diverse and informative visualizations to repr
 3. Confusion matrices to visualize model prediction accuracy across classes
 4. Training and validation loss/accuracy curves to monitor model learning
 5. ROC curves and precision-recall curves to evaluate model performance
-6. Feature importance visualizations to understand which image regions most influenced classifications
-7. t-SNE plots to visualize high-dimensional image features in 2D space
 
 Each visualization was carefully designed with appropriate labels, titles, and color schemes to make them easily interpretable. For example, when visualizing the confusion matrix, I used a normalized version with a color gradient to clearly show where misclassifications occurred most frequently.
 
