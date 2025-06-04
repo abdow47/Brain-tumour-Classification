@@ -104,7 +104,7 @@ I used GridSearchCV to systematically explore hyperparameter combinations for:
 - Batch size (16, 32, 64)
 - Dropout rates (0.2, 0.3, 0.5)
 - Number of convolutional layers and filters
-- Activation functions (ReLU, ELU, LeakyReLU)
+- Activation (ReLU)
 
 After extensive experimentation, the transfer learning approach with ResNet50 and fine-tuning yielded the best performance, achieving over 95% accuracy on the validation set.
 
