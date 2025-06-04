@@ -168,13 +168,13 @@ For deployment, I created a web application using Flask that allows users to upl
 
 1. I saved the trained model and preprocessing transformers to files that could be loaded by the web application.
 
-2. I developed a Flask application (app.py) that:
+2. I developed a Gradio application (app.py) that:
    - Provides a user-friendly interface for image upload
    - Preprocesses uploaded images using the same pipeline as during training
    - Applies the trained model to make predictions
    - Displays results with confidence scores for each cancer type
 
-3. The application was deployed to a web server and is accessible via the following link: [Brain Cancer Classifier App](https://brain-cancer-classifier.herokuapp.com)
+3. The application was deployed to a web interface (as a huggingface space) and is accessible via the following link: [Brain Cancer Classifier App]([https://brain-cancer-classifier.herokuapp.com](https://huggingface.co/spaces/abdo47/tumour_classification))
 
 4. The deployment process included thorough testing to ensure the application works correctly across different devices and browsers.
 
