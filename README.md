@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hello everyone, today I'll be presenting my machine learning project focused on brain cancer classification. This project addresses a critical healthcare challenge by using deep learning to classify different types of brain cancer from medical images. In this video, I'll walk you through the entire process from data preparation to model deployment, highlighting how I've applied the machine learning concepts we've learned throughout this course.
+Hello everyone, this machine learning project focused on brain cancer classification. This project addresses a critical healthcare challenge by using deep learning to classify different types of brain cancer from medical images.
 
 ## Project Overview
 
@@ -19,41 +19,6 @@ For this project, I've used the Multi-Cancer dataset from Kaggle, specifically f
 
 The dataset required significant preprocessing as it contained raw medical images with varying quality, dimensions, and formats - making it an excellent candidate for demonstrating data cleaning techniques.
 
-## Code Functionality and Organization
-
-Let me walk you through the code structure and functionality. I've organized my notebook into clear sections following a logical workflow:
-
-1. Library imports and setup
-2. Data loading and preprocessing
-3. Exploratory data analysis
-4. Data cleaning and preparation
-5. Feature engineering
-6. Model selection and training
-7. Hyperparameter tuning
-8. Model evaluation
-9. Deployment preparation
-
-I've implemented functions to avoid repetitive code and used descriptive variable names throughout. For example, when loading the dataset, I created a structured approach to read all images and their corresponding labels:
-
-```python
-data_dir='/kaggle/input/multi-cancer/Multi Cancer/Multi Cancer'
-target_folder='Brain Cancer'
-filepath=[]
-labels=[]
-all_folder_path = os.path.join(data_dir, target_folder)
-
-if os.path.isdir(all_folder_path):
-    filelist = os.listdir(all_folder_path)
-    for f in filelist:
-        fpath = os.path.join(all_folder_path, f)
-        fipath=os.listdir(fpath)
-        for image in fipath:
-            path = os.path.join(fpath, image)
-            filepath.append(path)
-            labels.append(f)
-```
-
-This approach ensures that all images are properly labeled and organized for further processing.
 
 ## Data Cleaning Phase
 
@@ -118,9 +83,7 @@ Feature engineering was a crucial aspect of improving model performance:
 
 3. For feature selection, I used an embedded method through the convolutional neural network architecture, which automatically learns the most relevant features from the images during training.
 
-4. I also experimented with dimensionality reduction techniques like Principal Component Analysis (PCA) to identify the most important components of the image data.
-
-5. I implemented filter methods to select features based on their statistical properties, focusing on regions with high variance across cancer types.
+4. I implemented filter methods to select features based on their statistical properties, focusing on regions with high variance across cancer types.
 
 These feature engineering and selection techniques significantly improved model performance by focusing on the most discriminative aspects of the brain MRI images.
 
@@ -164,7 +127,7 @@ To ensure robust model evaluation, I implemented a comprehensive validation stra
 
 ## Model Deployment
 
-For deployment, I created a web application using Flask that allows users to upload brain MRI images and receive instant classification results:
+For deployment, I created a web application using Gradio that allows users to upload brain MRI images and receive instant classification results:
 
 1. I saved the trained model and preprocessing transformers to files that could be loaded by the web application.
 
