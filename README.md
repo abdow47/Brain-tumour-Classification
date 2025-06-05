@@ -135,7 +135,7 @@ For deployment, I created a web application using Gradio that allows users to up
    - Applies the trained model to make predictions
    - Displays results with confidence scores for each cancer type
 
-3. The application was deployed to a web interface (as a huggingface space) and is accessible via the following link: [Brain Cancer Classifier App]([https://brain-cancer-classifier.herokuapp.com](https://huggingface.co/spaces/abdo47/tumour_classification))
+3. The application was deployed to a web interface (as a huggingface space) and is accessible via the following link: [Brain Cancer Classifier App](https://huggingface.co/spaces/abdo47/tumour_classification)
 
 4. The deployment process included thorough testing to ensure the application works correctly across different devices and browsers.
 
